@@ -1,6 +1,23 @@
 
 # Let's get cooking!
 
+ingredient_1 = 'milk'
+ingredient_2 = 'eggs'
+ingredient_3 = 'flour'
+ingredient_4 = 'sugar'
+
+print('milk, eggs, flour, sugar')
+print('milk' + ' ' + 'eggs' + ' ' + 'flour' + ' ' + 'sugar')
+print(f'{ingredient_1}, {ingredient_2}, {ingredient_3}, {ingredient_4}')
+ingredients = f'{ingredient_1}, {ingredient_2}, {ingredient_3}, {ingredient_4}'
+print('milk, eggs, flour, sugar'.replace('milk', 'butter'))
+count_milk = ('milk, eggs, flour, sugar'.replace('milk', 'butter').count('milk'))
+print(count_milk)
+print(ingredients)
+ingredients = ('milk, eggs, flour, sugar'.replace('milk', 'butter'))
+print(ingredients)
+print(ingredients.upper())
+
 baked_good = input('What is your favorite baked good? ')
 frequency = input(f'Roughly how many times a month do you eat {baked_good}s? ')
 print(type(frequency))
