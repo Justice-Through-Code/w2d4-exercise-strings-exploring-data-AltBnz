@@ -1,13 +1,11 @@
 
 # Let's get cooking!
 
-ingredient_1 = 'milk'
-ingredient_2 = 'eggs'
-ingredient_3 = 'flour'
-ingredient_4 = 'sugar'
+baked_good = input('What is your favorite baked good? ')
+frequency = input(f'Roughly how many times a month do you eat {baked_good}s? ')
+print(type(frequency))
 
-
-def print_ingredients():  # Ways to work with strings/printing
+#def print_ingredients():  # Ways to work with strings/printing
     # Those are the right ingredients, aren't they? Let's print them out a few different ways to check
 
     # 1.1 Using one print statement, print out the ingredients as 4 separate strings
@@ -19,8 +17,8 @@ def print_ingredients():  # Ways to work with strings/printing
     # as a single string (make sure to add a space between each ingredient!)
 
 
-def confirm_ingredients():  # String methods
-    global ingredient_1, ingredient_2, ingredient_3, ingredient_4
+#def confirm_ingredients():  # String methods
+    #global ingredient_1, ingredient_2, ingredient_3, ingredient_4
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
     
     # Aha, that's the issue! We need to use butter, not milk.
@@ -43,7 +41,7 @@ def confirm_ingredients():  # String methods
 #confirm_ingredients()
 
 
-def favorite_bake():  # User Input/Type conversion
+# def favorite_bake():  # User Input/Type conversion
     # The beauty of these ingredients is that you can make tons with them. 
     # Let's get some user input to decide what to bake!
 
@@ -61,8 +59,7 @@ def favorite_bake():  # User Input/Type conversion
     # What's missing from the first print statement to allow us to use a variable inside a string?
     # Use `type conversion` to fix the second one
     
-    # print('Ooooh, {baked_good}s are delicious!')
-    # print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
+print(f'Ooooh, {baked_good}s are delicious!')
+print(f'We recommend you eat {baked_good}s at least {int(frequency) * 2} times a month!')
     
 #favorite_bake()
-
